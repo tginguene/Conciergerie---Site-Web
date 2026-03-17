@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Optimistic Conciergerie — Prestation de services premium</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ══ HEADER ══ -->
+  <header>
+    <a href="index.html" class="logo">
+      <img src="images/Abeille jaune.png" alt="Abeille Optimistic Conciergerie" class="logo-icon">
+      <div class="logo-text">
+        Optimistic Conciergerie
+        <span>Prestation de services premium</span>
+      </div>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="nos-services.html">Nos services</a></li>
+        <li><a href="nos-tarifs.html">Nos tarifs</a></li>
+        <li><a href="nos-secteurs.html">Nos secteurs</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="contact.html" class="btn-nav">Nous contacter</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" aria-label="Ouvrir le menu" onclick="this.closest('header').classList.toggle('nav-open')">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero">
+    <div class="container" style="position:relative;z-index:1;">
+      <h1>Déléguez la gestion de votre bien.<br><span>Profitez des revenus.</span></h1>
+      <p>Optimistic Conciergerie prend en charge l'intégralité de votre location courte durée et optimise vos revenus en Île-de-France.</p>
+      <p>De la création d'annonce à l'accueil de vos voyageurs.</p>
+      <div class="hero-btns">
+        <a href="contact.html" class="btn btn-primary">Obtenir une estimation gratuite</a>
+        <a href="nos-services.html" class="btn btn-secondary">Découvrir nos services</a>
+      </div>
+      <div class="hero-phone">📞 <a href="tel:0666011234">06.66.01.xx.xx</a></div>
+    </div>
+  </section>
+
+  <!-- ══ CHIFFRES CLÉS ══ -->
+  <section class="section" style="background:var(--bleu-nuit); padding:3rem 2rem;">
+    <div class="container">
+      <div class="grid-3" style="text-align:center; color:var(--blanc);">
+        <div>
+          <div style="font-family:'Playfair Display',serif; font-size:2.8rem; color:var(--or); font-weight:700;">+30%</div>
+          <div style="font-size:0.9rem; margin-top:0.4rem; opacity:0.8;">de revenus en moyenne</div>
+        </div>
+        <div>
+          <div style="font-family:'Playfair Display',serif; font-size:2.8rem; color:var(--or); font-weight:700;">100%</div>
+          <div style="font-size:0.9rem; margin-top:0.4rem; opacity:0.8;">prise en charge</div>
+        </div>
+        <div>
+          <div style="font-family:'Playfair Display',serif; font-size:2.8rem; color:var(--or); font-weight:700;">0€</div>
+          <div style="font-size:0.9rem; margin-top:0.4rem; opacity:0.8;">de frais fixes</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ NOS SERVICES ══ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Une gestion complète, sans effort</h2>
+        <p>Nous gérons chaque étape de votre location, pour que vous n'ayez à vous occuper de rien.</p>
+        <div class="gold-line"></div>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-icon">📋</div>
+          <h3>Création des annonces</h3>
+          <p>Photos professionnelles, rédaction optimisée et publication sur Airbnb, Booking.com et autres plateformes.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📈</div>
+          <h3>Optimisation des prix</h3>
+          <p>Tarification dynamique basée sur la demande pour maximiser vos revenus tout au long de l'année.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">💬</div>
+          <h3>Assistance voyageur</h3>
+          <p>Gestion 7j/7 des messages, demandes et avis de vos locataires pour une expérience 5 étoiles.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🗝️</div>
+          <h3>Arrivée / Départ</h3>
+          <p>Accueil personnalisé de vos voyageurs, remise des clés et état des lieux à chaque séjour.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">✨</div>
+          <h3>Ménage professionnel</h3>
+          <p>Nettoyage complet entre chaque séjour, linge de maison fourni et remplacement des consommables.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🔧</div>
+          <h3>Maintenance des biens</h3>
+          <p>Suivi régulier de votre bien, intervention rapide en cas de panne ou de problème technique.</p>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:2.5rem;">
+        <a href="nos-services.html" class="btn btn-primary">Voir le détail de nos services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ POURQUOI NOUS ══ -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-title">
+        <h2>Pourquoi choisir Optimistic Conciergerie ?</h2>
+        <div class="gold-line"></div>
+      </div>
+      <div class="grid-2">
+        <div style="display:flex; gap:1rem; align-items:flex-start; padding:1.5rem;">
+          <div style="font-size:2rem; flex-shrink:0;">🏆</div>
+          <div>
+            <h3>Experts de la location courte durée</h3>
+            <p>Nous maîtrisons les codes des plateformes et les attentes des voyageurs pour optimiser chaque annonce.</p>
+          </div>
+        </div>
+        <div style="display:flex; gap:1rem; align-items:flex-start; padding:1.5rem;">
+          <div style="font-size:2rem; flex-shrink:0;">💼</div>
+          <div>
+            <h3>Commission uniquement sur vos revenus</h3>
+            <p>Aucun frais fixe. Nous sommes rémunérés uniquement quand vous gagnez. Nos intérêts sont alignés.</p>
+          </div>
+        </div>
+        <div style="display:flex; gap:1rem; align-items:flex-start; padding:1.5rem;">
+          <div style="font-size:2rem; flex-shrink:0;">📍</div>
+          <div>
+            <h3>Ancrage local en Île-de-France</h3>
+            <p>Une équipe présente sur le terrain, disponible rapidement pour vos voyageurs et votre bien.</p>
+          </div>
+        </div>
+        <div style="display:flex; gap:1rem; align-items:flex-start; padding:1.5rem;">
+          <div style="font-size:2rem; flex-shrink:0;">📊</div>
+          <div>
+            <h3>Reporting transparent</h3>
+            <p>Suivi clair de vos revenus, taux d'occupation et avis voyageurs. Vous restez maître de votre bien.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ TÉMOIGNAGES ══ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Ils nous font confiance</h2>
+        <div class="gold-line"></div>
+      </div>
+      <div class="grid-3">
+        <div class="temoignage">
+          <div class="stars">★★★★★</div>
+          <p>« Depuis que j'ai confié mon appartement à Optimistic Conciergerie, mes revenus ont augmenté de 35%. Je n'ai plus rien à gérer, c'est un vrai soulagement. »</p>
+          <div class="temoignage-auteur">— Sophie M., propriétaire à Paris 15e</div>
+        </div>
+        <div class="temoignage">
+          <div class="stars">★★★★★</div>
+          <p>« Professionnels, réactifs et de très bon conseil. Ils ont mis en valeur mon studio et les réservations ont décollé dès la première semaine. »</p>
+          <div class="temoignage-auteur">— Thomas R., propriétaire à Neuilly-sur-Seine</div>
+        </div>
+        <div class="temoignage">
+          <div class="stars">★★★★★</div>
+          <p>« Le service est irréprochable. Les voyageurs sont enchantés et mon bien est parfaitement entretenu. Je recommande sans hésiter. »</p>
+          <div class="temoignage-auteur">— Marie-Claire D., propriétaire à Versailles</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CTA FINAL ══ -->
+  <section style="background:var(--bleu-nuit); padding:5rem 2rem; text-align:center;">
+    <div class="container">
+      <h2 style="color:var(--blanc); margin-bottom:1rem;">Prêt à optimiser votre location ?</h2>
+      <p style="color:rgba(255,255,255,0.8); max-width:520px; margin:0 auto 2rem;">Contactez-nous pour une estimation gratuite de vos revenus potentiels. Sans engagement.</p>
+      <a href="contact.html" class="btn btn-primary" style="font-size:1rem;">Demander une estimation gratuite</a>
+      <div class="hero-phone" style="margin-top:1.5rem;">📞 <a href="tel:0666011234" style="color:var(--or);">06.66.01.xx.xx</a></div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo"><span>🐝</span> Optimistic Conciergerie</div>
+          <p style="font-size:0.9rem; max-width:280px;">Votre partenaire de confiance pour la gestion de location courte durée en Île-de-France.</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="nos-services.html">Nos services</a></li>
+            <li><a href="nos-tarifs.html">Nos tarifs</a></li>
+            <li><a href="nos-secteurs.html">Nos secteurs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>📞 <a href="tel:0666011234">06.66.01.xx.xx</a></li>
+            <li>✉️ <a href="mailto:conciergerie.optimistic@gmail.com">conciergerie.optimistic@gmail.com</a></li>
+            <li>📍 Île-de-France</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 Optimistic Conciergerie — Tous droits réservés
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

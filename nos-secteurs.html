@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nos secteurs — Optimistic Conciergerie</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ══ HEADER ══ -->
+  <header>
+    <a href="index.html" class="logo">
+      <img src="images/Abeille jaune.png" alt="Abeille Optimistic Conciergerie" class="logo-icon">
+      <div class="logo-text">
+        Optimistic Conciergerie
+        <span>Gestion locative premium</span>
+      </div>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="nos-services.html">Nos services</a></li>
+        <li><a href="nos-tarifs.html">Nos tarifs</a></li>
+        <li><a href="nos-secteurs.html" class="active">Nos secteurs</a></li>
+        <li><a href="contact.html" class="btn-nav">Nous contacter</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" aria-label="Ouvrir le menu" onclick="this.closest('header').classList.toggle('nav-open')">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ══ PAGE HERO ══ -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Nos secteurs</h1>
+      <p>Nous intervenons en Île-de-France pour gérer votre bien au plus près</p>
+      <div class="gold-line" style="margin-top:1.25rem;"></div>
+    </div>
+  </section>
+
+  <!-- ══ INTRO ══ -->
+  <section class="section" style="padding-bottom:2rem;">
+    <div class="container" style="max-width:720px; text-align:center;">
+      <p style="font-size:1.05rem;">Optimistic Conciergerie opère en <strong>région parisienne</strong>. Notre présence locale est un atout majeur : nous intervenons rapidement sur votre bien et connaissons parfaitement le marché locatif de chaque secteur.</p>
+    </div>
+  </section>
+
+  <!-- ══ CARTE PLACEHOLDER ══ -->
+  <section class="section section-alt" style="padding-top:2rem;">
+    <div class="container">
+      <div style="background:var(--blanc); border-radius:4px; border:2px dashed var(--or); padding:4rem 2rem; text-align:center; margin-bottom:3rem;">
+        <div style="font-size:3rem; margin-bottom:1rem;">🗺️</div>
+        <p style="color:var(--bleu-nuit); font-weight:600; font-size:1.05rem;">Carte interactive — Île-de-France</p>
+        <p style="color:#888; font-size:0.9rem; margin-top:0.5rem;">[Carte à intégrer — Google Maps ou carte SVG personnalisée]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SECTEURS ══ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Zones couvertes</h2>
+        <div class="gold-line"></div>
+      </div>
+      <div class="grid-3" style="margin-top:2rem;">
+
+        <div class="card">
+          <div class="card-icon">🗼</div>
+          <h3>Paris</h3>
+          <p>L'ensemble des arrondissements parisiens. Forte demande locative toute l'année grâce au tourisme et aux déplacements professionnels.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🏙️</div>
+          <h3>Hauts-de-Seine (92)</h3>
+          <p>Neuilly-sur-Seine, Boulogne-Billancourt, Levallois-Perret, Issy-les-Moulineaux et communes voisines.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🌳</div>
+          <h3>Seine-Saint-Denis (93)</h3>
+          <p>Saint-Denis, Montreuil, Vincennes et communes proches des grandes infrastructures de transport.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🏡</div>
+          <h3>Val-de-Marne (94)</h3>
+          <p>Créteil, Charenton-le-Pont, Ivry-sur-Seine, Maisons-Alfort et autres communes du Val-de-Marne.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🏰</div>
+          <h3>Versailles & Yvelines (78)</h3>
+          <p>Versailles, Saint-Germain-en-Laye et communes touristiques du département des Yvelines.</p>
+        </div>
+
+        <div class="card" style="border-top-color: var(--or-clair); background:var(--gris-doux);">
+          <div class="card-icon">📍</div>
+          <h3>Votre secteur ?</h3>
+          <p>Vous êtes propriétaire dans un autre secteur d'Île-de-France ? Contactez-nous, nous étudions chaque demande.</p>
+          <a href="contact.html" style="display:inline-block; margin-top:1rem; color:var(--bleu-nuit); font-weight:600; font-size:0.9rem;">Nous contacter →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ POURQUOI LOCAL ══ -->
+  <section class="section section-alt">
+    <div class="container" style="max-width:800px;">
+      <div class="section-title">
+        <h2>L'avantage d'une présence locale</h2>
+        <div class="gold-line"></div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:1.5rem; margin-top:2rem;">
+        <div style="display:flex; gap:1.25rem; align-items:flex-start;">
+          <div style="font-size:1.75rem; flex-shrink:0;">⚡</div>
+          <div>
+            <h3>Réactivité maximale</h3>
+            <p>En cas de problème ou d'urgence, notre équipe intervient rapidement sur place. Vos voyageurs ne sont jamais laissés sans solution.</p>
+          </div>
+        </div>
+        <div style="display:flex; gap:1.25rem; align-items:flex-start;">
+          <div style="font-size:1.75rem; flex-shrink:0;">📊</div>
+          <div>
+            <h3>Connaissance du marché</h3>
+            <p>Nous connaissons la demande, les prix pratiqués et les événements locaux pour optimiser les tarifs de votre bien au plus juste.</p>
+          </div>
+        </div>
+        <div style="display:flex; gap:1.25rem; align-items:flex-start;">
+          <div style="font-size:1.75rem; flex-shrink:0;">🤝</div>
+          <div>
+            <h3>Réseau de prestataires de confiance</h3>
+            <p>Plombiers, électriciens, femmes de ménage... Nous travaillons avec des artisans locaux réactifs et de qualité, pour un entretien optimal de votre bien.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CTA ══ -->
+  <section style="background:var(--bleu-nuit); padding:4rem 2rem; text-align:center;">
+    <div class="container">
+      <h2 style="color:var(--blanc); margin-bottom:1rem;">Votre bien est en Île-de-France ?</h2>
+      <p style="color:rgba(255,255,255,0.8); max-width:480px; margin:0 auto 2rem;">Contactez-nous pour vérifier si nous intervenons dans votre secteur et obtenir une estimation gratuite.</p>
+      <a href="contact.html" class="btn btn-primary">Vérifier mon secteur</a>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo"><span>🐝</span> Optimistic Conciergerie</div>
+          <p style="font-size:0.9rem; max-width:280px;">Votre partenaire de confiance pour la gestion de location courte durée en Île-de-France.</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="nos-services.html">Nos services</a></li>
+            <li><a href="nos-tarifs.html">Nos tarifs</a></li>
+            <li><a href="nos-secteurs.html">Nos secteurs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>📞 <a href="tel:0666011234">06.66.01.xx.xx</a></li>
+            <li>✉️ <a href="mailto:conciergerie.optimistic@gmail.com">conciergerie.optimistic@gmail.com</a></li>
+            <li>📍 Île-de-France</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 Optimistic Conciergerie — Tous droits réservés</div>
+    </div>
+  </footer>
+
+</body>
+</html>
