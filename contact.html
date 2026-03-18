@@ -113,6 +113,9 @@
             <p style="font-size:0.78rem; color:#999; margin-top:1rem; text-align:center;">
               * Champs obligatoires. Vos données sont utilisées uniquement pour vous recontacter.
             </p>
+            <p id="formError" style="display:none; color:#c0392b; text-align:center; margin-top:1rem; font-size:0.9rem;">
+              Une erreur est survenue. Veuillez réessayer ou nous contacter par email.
+            </p>
           </form>
 
           <div id="confirmationMsg" style="display:none; text-align:center; padding:2rem 0;">
@@ -147,12 +150,12 @@
         } else {
           btn.disabled = false;
           btn.textContent = 'Envoyer ma demande';
-          alert('Une erreur est survenue. Veuillez réessayer ou nous contacter par email.');
+          document.getElementById('formError').style.display = 'block';
         }
       } catch {
         btn.disabled = false;
         btn.textContent = 'Envoyer ma demande';
-        alert('Impossible d\'envoyer le message. Vérifiez votre connexion internet.');
+        document.getElementById('formError').style.display = 'block';
       }
     });
   </script>

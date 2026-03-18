@@ -5,45 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nos services — Optimistic Conciergerie</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script src="js/layout.js" defer></script>
 </head>
 <body>
 
-  <!-- ══ HEADER ══ -->
-  <header>
-    <a href="index.html" class="logo">
-      <img src="images/Abeille jaune.png" alt="Abeille Optimistic Conciergerie" class="logo-icon">
-      <div class="logo-text">
-        Optimistic Conciergerie
-        <span>Gestion locative premium</span>
-      </div>
-    </a>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="a-propos.html">À propos</a></li>
-        <li><a href="nos-services.html" class="active">Nos services</a></li>
-        <li><a href="nos-tarifs.html">Nos tarifs</a></li>
-        <li><a href="nos-secteurs.html">Nos secteurs</a></li>
-        <li><a href="contact.html" class="btn-nav">Nous contacter</a></li>
-      </ul>
-    </nav>
-    <button class="menu-toggle" aria-label="Ouvrir le menu" onclick="this.closest('header').classList.toggle('nav-open')">
-      <span></span><span></span><span></span>
-    </button>
-  </header>
+  <div id="site-header"></div>
 
   <!-- ══ PAGE HERO ══ -->
   <section class="page-hero">
     <div class="container">
       <h1>Nos services</h1>
       <p>Une offre complète pour maximiser vos revenus et préserver votre tranquillité</p>
-      <div class="gold-line" style="margin-top:1.25rem;"></div>
+      <div class="gold-line"></div>
     </div>
   </section>
 
   <!-- ══ INTRO ══ -->
   <section class="section" style="padding-bottom:2rem;">
-    <div class="container" style="max-width:720px; text-align:center;">
+    <div class="container content-intro">
       <p style="font-size:1.1rem;">Chez Optimistic Conciergerie, nous prenons en charge <strong>l'intégralité de la gestion de votre bien</strong>, de la mise en ligne de l'annonce jusqu'à l'entretien après chaque séjour. Vous déléguez tout, nous gérons tout.</p>
     </div>
   </section>
@@ -51,13 +30,13 @@
   <!-- ══ SERVICE 1 ══ -->
   <section class="section section-alt">
     <div class="container">
-      <div style="display:grid; grid-template-columns:1fr 2fr; gap:3rem; align-items:center;">
-        <div style="text-align:center; font-size:5rem;">📋</div>
+      <div class="grid-service">
+        <div class="service-icon">📋</div>
         <div>
           <h2>Gestion des annonces</h2>
-          <div class="gold-line" style="margin:1rem 0 1.5rem; margin-left:0;"></div>
+          <div class="gold-line gold-line-left"></div>
           <p style="margin-bottom:1rem;">Une annonce bien rédigée et bien illustrée, c'est la base d'une location qui performe. Notre équipe prend en charge :</p>
-          <ul style="list-style:none; display:flex; flex-direction:column; gap:0.6rem;">
+          <ul class="service-list">
             <li>✦ Séance photo professionnelle de votre bien</li>
             <li>✦ Rédaction d'une annonce attractive et optimisée</li>
             <li>✦ Publication sur Airbnb, Booking.com et autres plateformes</li>
@@ -71,19 +50,19 @@
   <!-- ══ SERVICE 2 ══ -->
   <section class="section">
     <div class="container">
-      <div style="display:grid; grid-template-columns:2fr 1fr; gap:3rem; align-items:center;">
+      <div class="grid-service-reverse">
         <div>
           <h2>Optimisation des prix</h2>
-          <div class="gold-line" style="margin:1rem 0 1.5rem; margin-left:0;"></div>
+          <div class="gold-line gold-line-left"></div>
           <p style="margin-bottom:1rem;">Le bon prix au bon moment, c'est ce qui fait la différence entre un bien qui se remplit et un bien qui reste vide. Nous appliquons une stratégie de tarification dynamique :</p>
-          <ul style="list-style:none; display:flex; flex-direction:column; gap:0.6rem;">
+          <ul class="service-list">
             <li>✦ Analyse de la demande et de la concurrence locale</li>
             <li>✦ Ajustement automatique des prix selon la saisonnalité</li>
             <li>✦ Optimisation des prix pour les événements et week-ends</li>
             <li>✦ Suivi mensuel des performances</li>
           </ul>
         </div>
-        <div style="text-align:center; font-size:5rem;">📈</div>
+        <div class="service-icon">📈</div>
       </div>
     </div>
   </section>
@@ -91,13 +70,13 @@
   <!-- ══ SERVICE 3 ══ -->
   <section class="section section-alt">
     <div class="container">
-      <div style="display:grid; grid-template-columns:1fr 2fr; gap:3rem; align-items:center;">
-        <div style="text-align:center; font-size:5rem;">💬</div>
+      <div class="grid-service">
+        <div class="service-icon">💬</div>
         <div>
           <h2>Accompagnement des voyageurs</h2>
-          <div class="gold-line" style="margin:1rem 0 1.5rem; margin-left:0;"></div>
+          <div class="gold-line gold-line-left"></div>
           <p style="margin-bottom:1rem;">Des voyageurs bien accompagnés, ce sont de bonnes notes. De bonnes notes, ce sont plus de réservations. Notre équipe gère :</p>
-          <ul style="list-style:none; display:flex; flex-direction:column; gap:0.6rem;">
+          <ul class="service-list">
             <li>✦ Réponse aux messages et demandes 7j/7</li>
             <li>✦ Vérification des profils voyageurs</li>
             <li>✦ Envoi des informations pratiques avant l'arrivée</li>
@@ -111,19 +90,19 @@
   <!-- ══ SERVICE 4 ══ -->
   <section class="section">
     <div class="container">
-      <div style="display:grid; grid-template-columns:2fr 1fr; gap:3rem; align-items:center;">
+      <div class="grid-service-reverse">
         <div>
           <h2>Arrivée / Départ</h2>
-          <div class="gold-line" style="margin:1rem 0 1.5rem; margin-left:0;"></div>
+          <div class="gold-line gold-line-left"></div>
           <p style="margin-bottom:1rem;">La première impression compte. Nous assurons un accueil soigné pour chaque séjour :</p>
-          <ul style="list-style:none; display:flex; flex-direction:column; gap:0.6rem;">
+          <ul class="service-list">
             <li>✦ Accueil personnalisé des voyageurs</li>
             <li>✦ Remise des clés et présentation du logement</li>
             <li>✦ État des lieux d'entrée et de sortie</li>
             <li>✦ Gestion des boîtes à clés sécurisées si nécessaire</li>
           </ul>
         </div>
-        <div style="text-align:center; font-size:5rem;">🗝️</div>
+        <div class="service-icon">🗝️</div>
       </div>
     </div>
   </section>
@@ -131,13 +110,13 @@
   <!-- ══ SERVICE 5 ══ -->
   <section class="section section-alt">
     <div class="container">
-      <div style="display:grid; grid-template-columns:1fr 2fr; gap:3rem; align-items:center;">
-        <div style="text-align:center; font-size:5rem;">✨</div>
+      <div class="grid-service">
+        <div class="service-icon">✨</div>
         <div>
           <h2>Ménage professionnel</h2>
-          <div class="gold-line" style="margin:1rem 0 1.5rem; margin-left:0;"></div>
+          <div class="gold-line gold-line-left"></div>
           <p style="margin-bottom:1rem;">Un logement impeccable à chaque arrivée. Notre équipe de ménage professionnelle prend en charge :</p>
-          <ul style="list-style:none; display:flex; flex-direction:column; gap:0.6rem;">
+          <ul class="service-list">
             <li>✦ Nettoyage complet entre chaque séjour</li>
             <li>✦ Fourniture et gestion du linge de maison</li>
             <li>✦ Réapprovisionnement en consommables (savon, café, etc.)</li>
@@ -151,66 +130,37 @@
   <!-- ══ SERVICE 6 ══ -->
   <section class="section">
     <div class="container">
-      <div style="display:grid; grid-template-columns:2fr 1fr; gap:3rem; align-items:center;">
+      <div class="grid-service-reverse">
         <div>
           <h2>Maintenance des biens</h2>
-          <div class="gold-line" style="margin:1rem 0 1.5rem; margin-left:0;"></div>
+          <div class="gold-line gold-line-left"></div>
           <p style="margin-bottom:1rem;">Votre bien est entretenu comme s'il était le nôtre. Nous assurons un suivi régulier :</p>
-          <ul style="list-style:none; display:flex; flex-direction:column; gap:0.6rem;">
+          <ul class="service-list">
             <li>✦ Inspection régulière de l'état du logement</li>
             <li>✦ Intervention rapide en cas de panne ou problème</li>
             <li>✦ Coordination avec des artisans de confiance</li>
             <li>✦ Compte-rendu des interventions effectuées</li>
           </ul>
         </div>
-        <div style="text-align:center; font-size:5rem;">🔧</div>
+        <div class="service-icon">🔧</div>
       </div>
     </div>
   </section>
 
   <!-- ══ CTA ══ -->
-  <section style="background:var(--bleu-nuit); padding:4rem 2rem; text-align:center;">
+  <section class="section-cta">
     <div class="container">
-      <h2 style="color:var(--blanc); margin-bottom:1rem;">Prêt à nous confier votre bien ?</h2>
-      <p style="color:rgba(255,255,255,0.8); max-width:500px; margin:0 auto 2rem;">Consultez nos tarifs ou contactez-nous directement pour une estimation gratuite.</p>
-      <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+      <h2 class="cta-title">Prêt à nous confier votre bien ?</h2>
+      <p class="cta-text">Consultez nos tarifs ou contactez-nous directement pour une estimation gratuite.</p>
+      <div class="btns-center">
         <a href="nos-tarifs.html" class="btn btn-secondary">Voir nos tarifs</a>
         <a href="contact.html" class="btn btn-primary">Nous contacter</a>
       </div>
     </div>
   </section>
 
-  <!-- ══ FOOTER ══ -->
-  <footer>
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <div class="footer-logo"><span>🐝</span> Optimistic Conciergerie</div>
-          <p style="font-size:0.9rem; max-width:280px;">Votre partenaire de confiance pour la gestion de location courte durée en Île-de-France.</p>
-        </div>
-        <div>
-          <h4>Navigation</h4>
-          <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="a-propos.html">À propos</a></li>
-            <li><a href="nos-services.html">Nos services</a></li>
-            <li><a href="nos-tarifs.html">Nos tarifs</a></li>
-            <li><a href="nos-secteurs.html">Nos secteurs</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <ul>
-            <li>📞 <a href="tel:0666011234">06.66.01.xx.xx</a></li>
-            <li>✉️ <a href="mailto:conciergerie.optimistic@gmail.com">conciergerie.optimistic@gmail.com</a></li>
-            <li>📍 Île-de-France</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">© 2026 Optimistic Conciergerie — Tous droits réservés</div>
-    </div>
-  </footer>
+  <div id="site-footer"></div>
+
 
 </body>
 </html>

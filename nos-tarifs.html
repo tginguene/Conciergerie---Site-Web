@@ -5,39 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nos tarifs — Optimistic Conciergerie</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script src="js/layout.js" defer></script>
 </head>
 <body>
 
-  <!-- ══ HEADER ══ -->
-  <header>
-    <a href="index.html" class="logo">
-      <img src="images/Abeille jaune.png" alt="Abeille Optimistic Conciergerie" class="logo-icon">
-      <div class="logo-text">
-        Optimistic Conciergerie
-        <span>Gestion locative premium</span>
-      </div>
-    </a>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="a-propos.html">À propos</a></li>
-        <li><a href="nos-services.html">Nos services</a></li>
-        <li><a href="nos-tarifs.html" class="active">Nos tarifs</a></li>
-        <li><a href="nos-secteurs.html">Nos secteurs</a></li>
-        <li><a href="contact.html" class="btn-nav">Nous contacter</a></li>
-      </ul>
-    </nav>
-    <button class="menu-toggle" aria-label="Ouvrir le menu" onclick="this.closest('header').classList.toggle('nav-open')">
-      <span></span><span></span><span></span>
-    </button>
-  </header>
+  <div id="site-header"></div>
 
   <!-- ══ PAGE HERO ══ -->
   <section class="page-hero">
     <div class="container">
       <h1>Nos tarifs</h1>
       <p>Une commission simple et transparente, uniquement sur vos revenus encaissés</p>
-      <div class="gold-line" style="margin-top:1.25rem;"></div>
+      <div class="gold-line"></div>
     </div>
   </section>
 
@@ -53,36 +32,27 @@
   <section class="section">
     <div class="container">
 
-      <!-- Grille des 3 tranches -->
-      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:2rem; max-width:950px; margin:0 auto 3rem;">
-
-        <!-- Tranche 1 : 0 à 600€ -->
-        <div class="tarif-card" style="text-align:center;">
-          <h3 style="color:var(--bleu-nuit); font-family:'Playfair Display',serif; font-size:1.05rem; margin-bottom:0.75rem;">0 à 600€ / mois</h3>
+      <div class="grid-tarifs">
+        <div class="tarif-card">
+          <h3 class="tarif-card-title">0 à 600€ / mois</h3>
           <div class="tarif-prix">15% <span>de commission</span></div>
-          <a href="contact.html" class="btn btn-primary" style="width:100%; text-align:center; margin-top:1.5rem;">Démarrer</a>
+          <a href="contact.html" class="btn btn-primary btn-tarif">Démarrer</a>
         </div>
-
-        <!-- Tranche 2 : 600 à 1300€ -->
-        <div class="tarif-card" style="text-align:center;">
-          <h3 style="color:var(--bleu-nuit); font-family:'Playfair Display',serif; font-size:1.05rem; margin-bottom:0.75rem;">600 à 1300€ / mois</h3>
+        <div class="tarif-card">
+          <h3 class="tarif-card-title">600 à 1300€ / mois</h3>
           <div class="tarif-prix">18% <span>de commission</span></div>
-          <a href="contact.html" class="btn btn-primary" style="width:100%; text-align:center; margin-top:1.5rem;">Démarrer</a>
+          <a href="contact.html" class="btn btn-primary btn-tarif">Démarrer</a>
         </div>
-
-        <!-- Tranche 3 : supérieur à 1300€ -->
-        <div class="tarif-card" style="text-align:center;">
-          <h3 style="color:var(--bleu-nuit); font-family:'Playfair Display',serif; font-size:1.05rem; margin-bottom:0.75rem;">Supérieurs à 1300€ / mois</h3>
+        <div class="tarif-card">
+          <h3 class="tarif-card-title">Supérieurs à 1300€ / mois</h3>
           <div class="tarif-prix">23% <span>de commission</span></div>
-          <a href="contact.html" class="btn btn-primary" style="width:100%; text-align:center; margin-top:1.5rem;">Démarrer</a>
+          <a href="contact.html" class="btn btn-primary btn-tarif">Démarrer</a>
         </div>
-
       </div>
 
-      <!-- Services inclus dans toutes les formules -->
-      <div style="max-width:600px; margin:0 auto; background:var(--gris-doux); border-radius:12px; padding:2rem 2.5rem;">
-        <h3 style="color:var(--bleu-nuit); font-family:'Playfair Display',serif; text-align:center; margin-bottom:1.25rem;">Inclus dans toutes les formules</h3>
-        <ul class="tarif-liste" style="columns:2; gap:1.5rem;">
+      <div class="tarifs-box">
+        <h3 class="tarifs-box-title">Inclus dans toutes les formules</h3>
+        <ul class="tarif-liste tarifs-box-list">
           <li>Gestion de l'annonce</li>
           <li>Optimisation des prix</li>
           <li>Accompagnement des voyageurs</li>
@@ -103,17 +73,17 @@
         <div class="gold-line"></div>
       </div>
       <div class="grid-3">
-        <div class="card" style="text-align:center;">
+        <div class="card card-center">
           <div class="card-icon">🔒</div>
           <h3>Zéro frais caché</h3>
           <p>La commission indiquée est la seule rémunération que nous percevons. Tout est clairement contractualisé.</p>
         </div>
-        <div class="card" style="text-align:center;">
+        <div class="card card-center">
           <div class="card-icon">📅</div>
           <h3>Sans engagement</h3>
           <p>Pas de durée minimale imposée. Vous restez libre de mettre fin à notre collaboration à tout moment.</p>
         </div>
-        <div class="card" style="text-align:center;">
+        <div class="card card-center">
           <div class="card-icon">💰</div>
           <h3>Revenus optimisés</h3>
           <p>Notre commission est largement compensée par l'augmentation de vos revenus grâce à notre expertise.</p>
@@ -129,21 +99,21 @@
         <h2>Questions fréquentes</h2>
         <div class="gold-line"></div>
       </div>
-      <div style="display:flex; flex-direction:column; gap:1.25rem; margin-top:2rem;">
-        <div style="border-bottom:1px solid var(--gris-doux); padding-bottom:1.25rem;">
-          <h3 style="color:var(--bleu-nuit); margin-bottom:0.5rem;">Comment est calculée la commission ?</h3>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3 class="faq-question">Comment est calculée la commission ?</h3>
           <p>La commission est calculée sur les revenus bruts encaissés, après déduction des frais de plateforme (Airbnb, Booking.com, etc.).</p>
         </div>
-        <div style="border-bottom:1px solid var(--gris-doux); padding-bottom:1.25rem;">
-          <h3 style="color:var(--bleu-nuit); margin-bottom:0.5rem;">Le ménage est-il inclus dans la commission ?</h3>
+        <div class="faq-item">
+          <h3 class="faq-question">Le ménage est-il inclus dans la commission ?</h3>
           <p>Oui, il est inclus à partir de la tranche 600–1300€. Pour la tranche inférieure à 600€, le ménage peut être facturé aux voyageurs via les plateformes.</p>
         </div>
-        <div style="border-bottom:1px solid var(--gris-doux); padding-bottom:1.25rem;">
-          <h3 style="color:var(--bleu-nuit); margin-bottom:0.5rem;">Puis-je bloquer des périodes pour mon usage personnel ?</h3>
+        <div class="faq-item">
+          <h3 class="faq-question">Puis-je bloquer des périodes pour mon usage personnel ?</h3>
           <p>Absolument. Votre bien reste le vôtre. Vous pouvez bloquer les dates que vous souhaitez à tout moment.</p>
         </div>
         <div>
-          <h3 style="color:var(--bleu-nuit); margin-bottom:0.5rem;">Quand est-ce que je perçois mes revenus ?</h3>
+          <h3 class="faq-question">Quand est-ce que je perçois mes revenus ?</h3>
           <p>Les versements sont effectués mensuellement, accompagnés d'un relevé détaillé de toutes les réservations.</p>
         </div>
       </div>
@@ -151,45 +121,15 @@
   </section>
 
   <!-- ══ CTA ══ -->
-  <section style="background:var(--bleu-nuit); padding:4rem 2rem; text-align:center;">
+  <section class="section-cta">
     <div class="container">
-      <h2 style="color:var(--blanc); margin-bottom:1rem;">Une question sur nos tarifs ?</h2>
-      <p style="color:rgba(255,255,255,0.8); max-width:480px; margin:0 auto 2rem;">Contactez-nous pour une estimation gratuite de vos revenus potentiels. Sans engagement.</p>
+      <h2 class="cta-title">Une question sur nos tarifs ?</h2>
+      <p class="cta-text">Contactez-nous pour une estimation gratuite de vos revenus potentiels. Sans engagement.</p>
       <a href="contact.html" class="btn btn-primary">Obtenir une estimation gratuite</a>
     </div>
   </section>
 
-  <!-- ══ FOOTER ══ -->
-  <footer>
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <div class="footer-logo"><span>🐝</span> Optimistic Conciergerie</div>
-          <p style="font-size:0.9rem; max-width:280px;">Votre partenaire de confiance pour la gestion de location courte durée en Île-de-France.</p>
-        </div>
-        <div>
-          <h4>Navigation</h4>
-          <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="a-propos.html">À propos</a></li>
-            <li><a href="nos-services.html">Nos services</a></li>
-            <li><a href="nos-tarifs.html">Nos tarifs</a></li>
-            <li><a href="nos-secteurs.html">Nos secteurs</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <ul>
-            <li>📞 <a href="tel:0666011234">06.66.01.xx.xx</a></li>
-            <li>✉️ <a href="mailto:conciergerie.optimistic@gmail.com">conciergerie.optimistic@gmail.com</a></li>
-            <li>📍 Île-de-France</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">© 2026 Optimistic Conciergerie — Tous droits réservés</div>
-    </div>
-  </footer>
+  <div id="site-footer"></div>
 
 </body>
 </html>

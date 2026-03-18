@@ -5,57 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>À propos — Optimistic Conciergerie</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script src="js/layout.js" defer></script>
 </head>
 <body>
 
-  <!-- ══ HEADER ══ -->
-  <header>
-    <a href="index.html" class="logo">
-      <img src="images/Abeille jaune.png" alt="Abeille Optimistic Conciergerie" class="logo-icon">
-      <div class="logo-text">
-        Optimistic Conciergerie
-        <span>Gestion locative premium</span>
-      </div>
-    </a>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="a-propos.html" class="active">À propos</a></li>
-        <li><a href="nos-services.html">Nos services</a></li>
-        <li><a href="nos-tarifs.html">Nos tarifs</a></li>
-        <li><a href="nos-secteurs.html">Nos secteurs</a></li>
-        <li><a href="contact.html" class="btn-nav">Nous contacter</a></li>
-      </ul>
-    </nav>
-    <button class="menu-toggle" aria-label="Ouvrir le menu" onclick="this.closest('header').classList.toggle('nav-open')">
-      <span></span><span></span><span></span>
-    </button>
-  </header>
+  <div id="site-header"></div>
 
   <!-- ══ PAGE HERO ══ -->
   <section class="page-hero">
     <div class="container">
       <h1>À propos</h1>
       <p>Une conciergerie née d'une passion pour l'immobilier et le service d'excellence</p>
-      <div class="gold-line" style="margin-top:1.25rem;"></div>
+      <div class="gold-line"></div>
     </div>
   </section>
 
   <!-- ══ NOTRE HISTOIRE ══ -->
   <section class="section">
     <div class="container">
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center;">
+      <div class="grid-about">
         <div>
           <h2>Notre histoire</h2>
-          <div class="gold-line" style="margin:1rem 0 1.5rem; margin-left:0;"></div>
+          <div class="gold-line gold-line-left"></div>
           <p style="margin-bottom:1rem;">Optimistic Conciergerie est née d'un constat simple : gérer soi-même sa location courte durée est chronophage, stressant et souvent sous-optimal. Trop de propriétaires laissent de l'argent sur la table faute de temps ou d'expertise.</p>
           <p style="margin-bottom:1rem;">Nous avons créé Optimistic Conciergerie pour apporter une réponse concrète à ce problème : une prise en charge totale, professionnelle et transparente, qui vous permet de profiter des revenus de votre bien sans en subir les contraintes.</p>
           <p>Notre approche est simple : nous traitons chaque bien comme si c'était le nôtre. Avec exigence, bienveillance et un souci permanent de l'excellence.</p>
         </div>
-        <div style="background:var(--gris-doux); border-radius:4px; padding:3rem; text-align:center;">
-          <div style="margin-bottom:1rem;"><img src="images/Abeille jaune.png" alt="Abeille Optimistic Conciergerie" style="height:5rem; width:auto;"></div>
-          <div style="font-family:'Playfair Display',serif; font-size:1.4rem; color:var(--bleu-nuit);">Optimistic Conciergerie</div>
-          <div style="color:var(--or); margin-top:0.5rem; font-size:0.9rem; letter-spacing:0.1em; text-transform:uppercase;">Excellence & Confiance</div>
+        <div class="brand-card">
+          <div style="margin-bottom:1rem;"><img src="images/Abeille jaune.png" alt="Abeille Optimistic Conciergerie" style="height:5rem; width:auto; margin:0 auto;"></div>
+          <div class="brand-name">Optimistic Conciergerie</div>
+          <div class="brand-tagline">Excellence & Confiance</div>
         </div>
       </div>
     </div>
@@ -69,17 +48,17 @@
         <div class="gold-line"></div>
       </div>
       <div class="grid-3">
-        <div class="card" style="text-align:center;">
+        <div class="card card-center">
           <div class="card-icon">🤝</div>
           <h3>Confiance</h3>
           <p>Transparence totale sur nos actions et vos revenus. Vous êtes informé à chaque étape.</p>
         </div>
-        <div class="card" style="text-align:center;">
+        <div class="card card-center">
           <div class="card-icon">⭐</div>
           <h3>Excellence</h3>
           <p>Nous visons la note maximale sur chaque annonce. L'expérience voyageur est notre obsession.</p>
         </div>
-        <div class="card" style="text-align:center;">
+        <div class="card card-center">
           <div class="card-icon">😊</div>
           <h3>Optimisme</h3>
           <p>Nous croyons en la valeur de chaque bien. Notre mission : en révéler tout le potentiel.</p>
@@ -95,23 +74,23 @@
         <h2>Notre engagement propriétaire</h2>
         <div class="gold-line"></div>
       </div>
-      <div style="display:flex; flex-direction:column; gap:1.5rem; margin-top:2rem;">
-        <div style="display:flex; gap:1.25rem; align-items:flex-start;">
-          <div style="background:var(--or); color:var(--bleu-nuit); font-weight:700; width:36px; height:36px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">1</div>
+      <div class="feature-list">
+        <div class="feature-item">
+          <div class="circle-badge">1</div>
           <div>
             <h3>Zéro frais fixe</h3>
             <p>Nous percevons une commission uniquement sur les revenus réellement générés. Si vous ne gagnez pas, nous ne gagnons pas.</p>
           </div>
         </div>
-        <div style="display:flex; gap:1.25rem; align-items:flex-start;">
-          <div style="background:var(--or); color:var(--bleu-nuit); font-weight:700; width:36px; height:36px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">2</div>
+        <div class="feature-item">
+          <div class="circle-badge">2</div>
           <div>
             <h3>Votre bien reste le vôtre</h3>
             <p>Vous restez propriétaire et décisionnaire. Nous vous consultons pour les décisions importantes et vous rendons compte régulièrement.</p>
           </div>
         </div>
-        <div style="display:flex; gap:1.25rem; align-items:flex-start;">
-          <div style="background:var(--or); color:var(--bleu-nuit); font-weight:700; width:36px; height:36px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">3</div>
+        <div class="feature-item">
+          <div class="circle-badge">3</div>
           <div>
             <h3>Disponibilité 7j/7</h3>
             <p>Notre équipe est joignable tous les jours pour vos voyageurs et pour vous. Aucune situation ne reste sans réponse.</p>
@@ -122,45 +101,15 @@
   </section>
 
   <!-- ══ CTA ══ -->
-  <section style="background:var(--bleu-nuit); padding:4rem 2rem; text-align:center;">
+  <section class="section-cta">
     <div class="container">
-      <h2 style="color:var(--blanc); margin-bottom:1rem;">Travaillons ensemble</h2>
-      <p style="color:rgba(255,255,255,0.8); max-width:480px; margin:0 auto 2rem;">Vous avez un bien à valoriser en Île-de-France ? Contactez-nous pour en discuter.</p>
+      <h2 class="cta-title">Travaillons ensemble</h2>
+      <p class="cta-text">Vous avez un bien à valoriser en Île-de-France ? Contactez-nous pour en discuter.</p>
       <a href="contact.html" class="btn btn-primary">Prendre contact</a>
     </div>
   </section>
 
-  <!-- ══ FOOTER ══ -->
-  <footer>
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <div class="footer-logo"><span>🐝</span> Optimistic Conciergerie</div>
-          <p style="font-size:0.9rem; max-width:280px;">Votre partenaire de confiance pour la gestion de location courte durée en Île-de-France.</p>
-        </div>
-        <div>
-          <h4>Navigation</h4>
-          <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="a-propos.html">À propos</a></li>
-            <li><a href="nos-services.html">Nos services</a></li>
-            <li><a href="nos-tarifs.html">Nos tarifs</a></li>
-            <li><a href="nos-secteurs.html">Nos secteurs</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <ul>
-            <li>📞 <a href="tel:0666011234">06.66.01.xx.xx</a></li>
-            <li>✉️ <a href="mailto:conciergerie.optimistic@gmail.com">conciergerie.optimistic@gmail.com</a></li>
-            <li>📍 Île-de-France</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">© 2026 Optimistic Conciergerie — Tous droits réservés</div>
-    </div>
-  </footer>
+  <div id="site-footer"></div>
 
 </body>
 </html>

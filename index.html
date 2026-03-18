@@ -5,32 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Optimistic Conciergerie — Prestation de services premium</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script src="js/layout.js" defer></script>
 </head>
 <body>
 
-  <!-- ══ HEADER ══ -->
-  <header>
-    <a href="index.html" class="logo">
-      <img src="images/Abeille jaune.png" alt="Abeille Optimistic Conciergerie" class="logo-icon">
-      <div class="logo-text">
-        Optimistic Conciergerie
-        <span>Prestation de services premium</span>
-      </div>
-    </a>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Accueil</a></li>
-        <li><a href="nos-services.html">Nos services</a></li>
-        <li><a href="nos-tarifs.html">Nos tarifs</a></li>
-        <li><a href="nos-secteurs.html">Nos secteurs</a></li>
-        <li><a href="a-propos.html">À propos</a></li>
-        <li><a href="contact.html" class="btn-nav">Nous contacter</a></li>
-      </ul>
-    </nav>
-    <button class="menu-toggle" aria-label="Ouvrir le menu" onclick="this.closest('header').classList.toggle('nav-open')">
-      <span></span><span></span><span></span>
-    </button>
-  </header>
+  <div id="site-header"></div>
 
   <!-- ══ HERO ══ -->
   <section class="hero">
@@ -47,20 +26,20 @@
   </section>
 
   <!-- ══ CHIFFRES CLÉS ══ -->
-  <section class="section" style="background:var(--bleu-nuit); padding:3rem 2rem;">
+  <section class="section-stats">
     <div class="container">
-      <div class="grid-3" style="text-align:center; color:var(--blanc);">
+      <div class="grid-3 stats-grid">
         <div>
-          <div style="font-family:'Playfair Display',serif; font-size:2.8rem; color:var(--or); font-weight:700;">+30%</div>
-          <div style="font-size:0.9rem; margin-top:0.4rem; opacity:0.8;">de revenus en moyenne</div>
+          <div class="stat-number">+30%</div>
+          <div class="stat-label">de revenus en moyenne</div>
         </div>
         <div>
-          <div style="font-family:'Playfair Display',serif; font-size:2.8rem; color:var(--or); font-weight:700;">100%</div>
-          <div style="font-size:0.9rem; margin-top:0.4rem; opacity:0.8;">prise en charge</div>
+          <div class="stat-number">100%</div>
+          <div class="stat-label">prise en charge</div>
         </div>
         <div>
-          <div style="font-family:'Playfair Display',serif; font-size:2.8rem; color:var(--or); font-weight:700;">0€</div>
-          <div style="font-size:0.9rem; margin-top:0.4rem; opacity:0.8;">de frais fixes</div>
+          <div class="stat-number">0€</div>
+          <div class="stat-label">de frais fixes</div>
         </div>
       </div>
     </div>
@@ -106,7 +85,7 @@
           <p>Suivi régulier de votre bien, intervention rapide en cas de panne ou de problème technique.</p>
         </div>
       </div>
-      <div style="text-align:center; margin-top:2.5rem;">
+      <div class="text-center-mt">
         <a href="nos-services.html" class="btn btn-primary">Voir le détail de nos services</a>
       </div>
     </div>
@@ -120,29 +99,29 @@
         <div class="gold-line"></div>
       </div>
       <div class="grid-2">
-        <div style="display:flex; gap:1rem; align-items:flex-start; padding:1.5rem;">
-          <div style="font-size:2rem; flex-shrink:0;">🏆</div>
+        <div class="why-item">
+          <div class="why-icon">🏆</div>
           <div>
             <h3>Experts de la location courte durée</h3>
             <p>Nous maîtrisons les codes des plateformes et les attentes des voyageurs pour optimiser chaque annonce.</p>
           </div>
         </div>
-        <div style="display:flex; gap:1rem; align-items:flex-start; padding:1.5rem;">
-          <div style="font-size:2rem; flex-shrink:0;">💼</div>
+        <div class="why-item">
+          <div class="why-icon">💼</div>
           <div>
             <h3>Commission uniquement sur vos revenus</h3>
             <p>Aucun frais fixe. Nous sommes rémunérés uniquement quand vous gagnez. Nos intérêts sont alignés.</p>
           </div>
         </div>
-        <div style="display:flex; gap:1rem; align-items:flex-start; padding:1.5rem;">
-          <div style="font-size:2rem; flex-shrink:0;">📍</div>
+        <div class="why-item">
+          <div class="why-icon">📍</div>
           <div>
             <h3>Ancrage local en Île-de-France</h3>
             <p>Une équipe présente sur le terrain, disponible rapidement pour vos voyageurs et votre bien.</p>
           </div>
         </div>
-        <div style="display:flex; gap:1rem; align-items:flex-start; padding:1.5rem;">
-          <div style="font-size:2rem; flex-shrink:0;">📊</div>
+        <div class="why-item">
+          <div class="why-icon">📊</div>
           <div>
             <h3>Reporting transparent</h3>
             <p>Suivi clair de vos revenus, taux d'occupation et avis voyageurs. Vous restez maître de votre bien.</p>
@@ -180,48 +159,16 @@
   </section>
 
   <!-- ══ CTA FINAL ══ -->
-  <section style="background:var(--bleu-nuit); padding:5rem 2rem; text-align:center;">
+  <section class="section-cta">
     <div class="container">
-      <h2 style="color:var(--blanc); margin-bottom:1rem;">Prêt à optimiser votre location ?</h2>
-      <p style="color:rgba(255,255,255,0.8); max-width:520px; margin:0 auto 2rem;">Contactez-nous pour une estimation gratuite de vos revenus potentiels. Sans engagement.</p>
+      <h2 class="cta-title">Prêt à optimiser votre location ?</h2>
+      <p class="cta-text">Contactez-nous pour une estimation gratuite de vos revenus potentiels. Sans engagement.</p>
       <a href="contact.html" class="btn btn-primary" style="font-size:1rem;">Demander une estimation gratuite</a>
       <div class="hero-phone" style="margin-top:1.5rem;">📞 <a href="tel:0666011234" style="color:var(--or);">06.66.01.xx.xx</a></div>
     </div>
   </section>
 
-  <!-- ══ FOOTER ══ -->
-  <footer>
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <div class="footer-logo"><span>🐝</span> Optimistic Conciergerie</div>
-          <p style="font-size:0.9rem; max-width:280px;">Votre partenaire de confiance pour la gestion de location courte durée en Île-de-France.</p>
-        </div>
-        <div>
-          <h4>Navigation</h4>
-          <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="a-propos.html">À propos</a></li>
-            <li><a href="nos-services.html">Nos services</a></li>
-            <li><a href="nos-tarifs.html">Nos tarifs</a></li>
-            <li><a href="nos-secteurs.html">Nos secteurs</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <ul>
-            <li>📞 <a href="tel:0666011234">06.66.01.xx.xx</a></li>
-            <li>✉️ <a href="mailto:conciergerie.optimistic@gmail.com">conciergerie.optimistic@gmail.com</a></li>
-            <li>📍 Île-de-France</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        © 2026 Optimistic Conciergerie — Tous droits réservés
-      </div>
-    </div>
-  </footer>
+  <div id="site-footer"></div>
 
 </body>
 </html>
