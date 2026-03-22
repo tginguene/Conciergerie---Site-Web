@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tginguene.github.io/conciergerie/sitemap.xml
